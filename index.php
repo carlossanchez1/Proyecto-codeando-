@@ -11,7 +11,7 @@ session_start();
 	<div class="container">
 	<div class="row">
 	<div class="col-md-12">
-			<h2>Bienvenido a <span class="lead"><img src="../../../Users/CARLOS/Desktop/Codeando/logo.png" width="309" height="75" alt=""/></span></h2>
+			<h2>Bienvenido a<img src="../../../../wamp/www/Codeando/logo.png" width="309" height="75" alt=""/></h2>
 			<p class="lead">&nbsp;</p>
 			<p>Para entrar a la pagina</p>
 			<p>Instrucciones:</p>
