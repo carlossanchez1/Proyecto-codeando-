@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -43,7 +43,7 @@
 	
   <div id="header">
 		<div id="logo">
-			<h1>Codeando</h1C>		</div>
+			<h1>Codeando</h1>		</div>
 
 	</div>
 
@@ -62,7 +62,7 @@ $link=mysqli_connect("localhost","root","");
 mysqli_select_db($link, "temas");
 $result=mysqli_query($link, "select * from tema");
 echo"<table>";
-echo"<tr><td> Num Tema</td><td>Titulo</td></tr>";
+echo"<tr><td><h2>Temas</h2></td></tr>";
 $cont=1;
 
 while($row=mysqli_fetch_array($result))
@@ -71,7 +71,7 @@ while($row=mysqli_fetch_array($result))
 	$ti=$row['titulo'];
 	if($cont%2==0) $col='#000000';
 	else $col='#000000';
-	echo"<tr bgcolor= $col><td> $id</td><td><A href='vercon.php?id=$id'>$ti</A></td></tr>";
+	echo"<tr bgcolor= $col><td><A href='vercon.php?id=$id'><h3>$ti</h3></A></td></tr>";
 	$cont++;
 }
 mysqli_close($link);
